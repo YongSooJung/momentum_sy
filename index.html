@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+		<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>나만의 동기부여 홈화면 만들기</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            /* background-image: url("https://media.timeout.com/images/105211701/image.jpg"); */
+            background-image: url("https://img.freepik.com/free-photo/sexy-girl-wearing-sportswear-is-posing-with-fitness-ball-in-the-gym_613910-21084.jpg?w=1380&t=st=1673592788~exp=1673593388~hmac=7229932b76adca73b1fbe4b036346502dd31ff2ccfdbc40c8feda9d5e82f3502");
+            background-position: center;
+
+            color: white;
+        }
+
+        .time {
+            font-size: 70px;
+            font-weight: bold;
+
+            /* color: yellow; */
+        }
+
+        .greeting {
+            font-size: 50px;
+        }
+
+        .todo {
+            font-size: 40px;
+            font-weight: bold;
+            color: yellow;
+        }
+
+        .author {
+            font-size: 25px;
+            font-style: italic;           
+        
+        }
+
+        .main {
+            width: 100vw;
+            height: 70vh;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .quote {
+            width: 100vw;
+            height: 30vh;
+           
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;            
+        }
+
+        .content {
+            color: yellow;
+        }
+        
+               
+        
+    </style>
+
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div id="time" class="time">12:00</div>
+        <div class="greeting">Hello, Seyoung Yoon</div>
+        <div class="todo">주 3회 운동하기</div>    
+    </div>
+    <div class="quote">
+        <div id="author"  class="author">- 명언의 저자 -</div>
+        <div id="content" class="content">" 명언의 내용 "</div>
+    </div>
+</body>
+
+</html>
